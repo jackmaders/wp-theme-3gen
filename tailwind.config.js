@@ -15,8 +15,8 @@ export default {
       },
     },
     fontFamily: {
-      heading: ["Roboto", ...defaultTheme.fontFamily.sans],
-      body: ["Open Sans", ...defaultTheme.fontFamily.sans],
+      heading: ["Roboto Flex Variable", ...defaultTheme.fontFamily.sans],
+      body: ["Open Sans Variable", ...defaultTheme.fontFamily.sans],
     },
     colors: {
       dark: "#0d130e",
