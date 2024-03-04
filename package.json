@@ -1,0 +1,49 @@
+{
+  "name": "wp-theme-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Boilerplate template for a Wordpress Theme using Vite, Typescript, & Tailwind CSS.",
+  "keywords": [
+    "wordpress",
+    "vite",
+    "tailwindcss",
+    "typescript",
+    "boilerplate",
+    "template"
+  ],
+  "homepage": "https://github.com/jackmaders/wp-theme-template",
+  "main": "/src/index.ts",
+  "author": "Jack Maders",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && vite build",
+    "build:watch": "tsc && vite build --watch",
+    "lint": "npm run lint:php && npm run lint:eslint && npm run lint:stylelint && npm run format",
+    "lint:php": "phplint **/*.php",
+    "lint:eslint": "eslint --fix --ignore-path .gitignore **/*.{ts,js}",
+    "lint:stylelint": "stylelint --fix --ignore-path .gitignore **/*.css",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.22.2",
+    "@tailwindcss/typography": "^0.5.10",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "fast-glob": "^3.3.2",
+    "phplint": "^2.0.5",
+    "postcss-import": "^16.0.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-full-bleed": "^2.0.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.1"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
