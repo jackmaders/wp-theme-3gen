@@ -1,21 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <?php wp_head(); ?>
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="container">
-        <?php get_template_part("templates-parts/navigation"); ?>
-
-
-        <?php get_template_part("templates-parts/footer"); ?>
+      <?php get_template_part("templates-parts/navigation"); ?> <?php
+      get_template_part("templates-parts/footer"); ?>
     </main>
 
-
     <?php wp_footer(); ?>
-</body>
-
-
+  </body>
 </html>

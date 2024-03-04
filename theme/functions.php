@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 <?php
 
 function threeGen_theme_support()

@@ -1,0 +1,20 @@
+#menu-main-menu li a {
+  @apply w-full;
+  @apply font-body;
+  @apply font-medium;
+  @apply text-lg;
+  @apply -outline-offset-2;
+  @apply h-full;
+  @apply flex;
+  @apply items-center;
+  @apply justify-between;
+  @apply py-3;
+  @apply flex;
+}
+
+#menu-main-menu li a::before {
+  @apply content-empty;
+  @apply bg-light;
+  @apply size-6;
+  @apply mask-chevron-left;
+}

@@ -10,4 +10,20 @@
   .mask-x-mark {
     mask: center / contain no-repeat url("/src/images/svg/x-mark.svg");
   }
+
+  .bg-glass {
+    @apply from-dark/80;
+    @apply to-dark/40;
+    @apply bg-gradient-to-br;
+    @apply backdrop-blur-lg;
+    @apply overflow-hidden;
+  }
+
+  .bg-glass--light {
+    @apply from-dark/60;
+    @apply to-dark/30;
+    @apply bg-gradient-to-br;
+    @apply backdrop-blur;
+    @apply overflow-hidden;
+  }
 }

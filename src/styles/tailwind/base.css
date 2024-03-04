@@ -10,7 +10,7 @@
   .h1 {
     @apply font-heading;
     @apply text-5xl;
-    @apply font-black;
+    @apply font-extrabold;
     @apply leading-none;
   }
 
@@ -39,10 +39,5 @@
   .h5 {
     @apply font-heading;
     @apply text-xl;
-  }
-
-  .navbar-links li {
-    @apply font-body;
-    @apply text-lg;
   }
 }

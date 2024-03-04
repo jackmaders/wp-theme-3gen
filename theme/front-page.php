@@ -5,9 +5,11 @@
   </head>
 
   <body>
+    <!-- prettier-ignore -->
     <main class="container">
       <?php get_template_part("templates-parts/navigation"); ?>
       <?php get_template_part("templates-parts/hero"); ?>
+      <?php the_content(); ?>
       <?php get_template_part("templates-parts/footer"); ?>
     </main>
 

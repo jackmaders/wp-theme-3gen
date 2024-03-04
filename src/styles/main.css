@@ -2,4 +2,5 @@
 @import url("./tailwind/components.css");
 @import url("./tailwind/utilities.css");
 
-@import url("./utilities/masks.css");
+@import url("./wordpress/navigation-menu.css");
+@import url("./wordpress/contact-form-7.css");
