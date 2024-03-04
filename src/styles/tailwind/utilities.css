@@ -1,4 +1,13 @@
 @import "tailwindcss/utilities";
 
 @layer utilities {
+  .mask-bars-3 {
+    mask: center / contain no-repeat url("/src/images/svg/bars-3.svg");
+  }
+  .mask-chevron-left {
+    mask: center / contain no-repeat url("/src/images/svg/chevron-left.svg");
+  }
+  .mask-x-mark {
+    mask: center / contain no-repeat url("/src/images/svg/x-mark.svg");
+  }
 }

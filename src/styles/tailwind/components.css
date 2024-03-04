@@ -1,4 +1,16 @@
 @import "tailwindcss/components";
 
 @layer components {
+  .button {
+    @apply py-3;
+    @apply px-10;
+    @apply w-full;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply bg-emerald-700;
+    @apply text-xl;
+    @apply font-medium;
+    @apply rounded-sm;
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "wp-theme-template",
+  "name": "wp-theme-3gen",
   "version": "1.0.0",
   "type": "module",
   "description": "Boilerplate template for a Wordpress Theme using Vite, Typescript, & Tailwind CSS.",
@@ -45,5 +45,9 @@
   },
   "engines": {
     "node": "*"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "^5.0.25",
+    "@fontsource/roboto": "^5.0.12"
   }
 }
