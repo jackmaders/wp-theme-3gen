@@ -13,5 +13,6 @@
     @apply font-medium;
     @apply rounded-sm;
     @apply border-0;
+    @apply md:w-max;
   }
 }

@@ -4,8 +4,13 @@
   .mask-bars-3 {
     mask: center / contain no-repeat url("/src/images/svg/bars-3.svg");
   }
+
   .mask-chevron-left {
     mask: center / contain no-repeat url("/src/images/svg/chevron-left.svg");
+  }
+
+  .mask-chevron-down {
+    mask: center / contain no-repeat url("/src/images/svg/chevron-down.svg");
   }
   .mask-x-mark {
     mask: center / contain no-repeat url("/src/images/svg/x-mark.svg");

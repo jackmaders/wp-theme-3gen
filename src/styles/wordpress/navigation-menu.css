@@ -7,14 +7,16 @@
   @apply h-full;
   @apply flex;
   @apply items-center;
-  @apply justify-between;
+  @apply justify-end;
   @apply py-3;
-  @apply flex;
+  @apply lg:flex-row-reverse;
+  @apply lg:gap-2;
 }
 
-#menu-main-menu li a::before {
+/* #menu-main-menu li a::before {
   @apply content-empty;
   @apply bg-light;
   @apply size-6;
   @apply mask-chevron-left;
-}
+  @apply lg:mask-chevron-down;
+} */

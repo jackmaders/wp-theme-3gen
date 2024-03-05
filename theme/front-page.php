@@ -6,7 +6,7 @@
 
   <body>
     <!-- prettier-ignore -->
-    <main class="container">
+    <main class="">
       <?php get_template_part("templates-parts/navigation"); ?>
       <?php get_template_part("templates-parts/hero"); ?>
       <?php the_content(); ?>
