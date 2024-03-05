@@ -74,5 +74,6 @@ export default {
   plugins: [
     require("tailwindcss-full-bleed"),
     require("@tailwindcss/typography"),
+    require("@pyncz/tailwind-mask-image"),
   ],
 };

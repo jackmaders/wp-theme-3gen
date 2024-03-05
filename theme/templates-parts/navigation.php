@@ -15,7 +15,7 @@
       </a>
 
       <button
-        class="toggle-button after:mask-bars-3 after:block after:size-11 after:bg-light after:content-empty lg:hidden"
+        class="toggle-button after:mask-[url('/src/images/svg/bars-3.svg')] after:mask-size-contain after:mask-position-center after:mask-no-repeat after:block after:size-11 after:bg-light after:content-empty lg:hidden"
       >
         <spam class="sr-only">toggle menu</spam>
       </button>
@@ -28,11 +28,11 @@
       >
         <!-- prettier-ignore -->
         <?php wp_nav_menu([
-          "menu" => "primary",
+          "menu" => "Navbar Menu",
           "container" => "",
           "menu_class" =>
-              "flex flex-col w-full justify-start text-right col lg:flex-row lg:w-fit lg:gap-5",
-      ]); ?>
+              "navigation-menu",
+        ]); ?>
 
         <a class="button" href="/">Get a Quote</a>
       </div>

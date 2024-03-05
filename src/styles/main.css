@@ -3,4 +3,5 @@
 @import url("./tailwind/utilities.css");
 
 @import url("./wordpress/navigation-menu.css");
+@import url("./wordpress/footer-menu.css");
 @import url("./wordpress/contact-form-7.css");

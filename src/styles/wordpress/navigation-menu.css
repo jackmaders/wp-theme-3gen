@@ -1,6 +1,17 @@
-#menu-main-menu li a {
+.navigation-menu {
+  @apply flex;
+  @apply flex-col;
   @apply w-full;
-  @apply font-body;
+  @apply justify-start;
+  @apply text-right;
+  @apply lg:flex-row;
+  @apply lg:w-fit;
+  @apply lg:w-fit;
+  @apply lg:gap-5;
+}
+
+.navigation-menu li a {
+  @apply w-full;
   @apply font-medium;
   @apply text-lg;
   @apply -outline-offset-2;

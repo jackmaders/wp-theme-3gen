@@ -1,0 +1,29 @@
+.footer-menu {
+  @apply flex;
+  @apply flex-col;
+  @apply w-full;
+  @apply items-center;
+  @apply gap-2;
+}
+
+.footer-menu li a {
+  @apply w-full;
+  @apply font-medium;
+  @apply text-lg;
+}
+
+.footer-menu li.current-menu-item a {
+  @apply font-body;
+  @apply underline;
+  @apply decoration-emerald-700;
+  @apply decoration-2;
+  @apply underline-offset-4;
+}
+
+/* #menu-main-menu li a::before {
+  @apply content-empty;
+  @apply bg-light;
+  @apply size-6;
+  @apply mask-chevron-left;
+  @apply lg:mask-chevron-down;
+} */

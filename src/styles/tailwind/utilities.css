@@ -1,21 +1,6 @@
 @import "tailwindcss/utilities";
 
 @layer utilities {
-  .mask-bars-3 {
-    mask: center / contain no-repeat url("/src/images/svg/bars-3.svg");
-  }
-
-  .mask-chevron-left {
-    mask: center / contain no-repeat url("/src/images/svg/chevron-left.svg");
-  }
-
-  .mask-chevron-down {
-    mask: center / contain no-repeat url("/src/images/svg/chevron-down.svg");
-  }
-  .mask-x-mark {
-    mask: center / contain no-repeat url("/src/images/svg/x-mark.svg");
-  }
-
   .bg-glass {
     @apply from-dark/80;
     @apply to-dark/40;
@@ -48,8 +33,9 @@
     @apply absolute;
     @apply block;
     @apply size-6;
-    @apply mask-chevron-down;
+    @apply mask-[url('/src/images/svg/chevron-down.svg')];
     @apply bg-dark;
     @apply mr-4;
+    @apply pointer-events-none;
   }
 }

@@ -6,7 +6,11 @@ export default function navigation(element: HTMLElement) {
   toggleButton?.addEventListener("click", () => {
     dropdownMenu?.classList.toggle("max-lg:grid-rows-0fr");
     dropdownMenu?.classList.toggle("max-lg:grid-rows-1fr");
-    toggleButton?.classList.toggle("after:mask-bars-3");
-    toggleButton?.classList.toggle("after:mask-x-mark");
+    toggleButton?.classList.toggle(
+      "after:mask-[url('/src/images/svg/bars-3.svg')]",
+    );
+    toggleButton?.classList.toggle(
+      "after:mask-[url('/src/images/svg/x-mark.svg')]",
+    );
   });
 }
