@@ -12,5 +12,6 @@
     @apply text-xl;
     @apply font-medium;
     @apply rounded-sm;
+    @apply border-0;
   }
 }

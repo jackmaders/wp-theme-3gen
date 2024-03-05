@@ -58,6 +58,9 @@ export default {
       content: {
         empty: '""',
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [

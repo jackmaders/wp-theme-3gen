@@ -40,4 +40,29 @@
     @apply font-heading;
     @apply text-xl;
   }
+
+  label,
+  .label {
+    @apply text-sm;
+    @apply font-semibold;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply bg-light;
+    @apply border-1;
+    @apply border-dark;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-sm;
+    @apply text-dark;
+    @apply opacity-50;
+    @apply font-normal;
+  }
 }
