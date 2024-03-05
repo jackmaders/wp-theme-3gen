@@ -19,7 +19,7 @@ $hero_subheading = get_theme_mod("hero_subheading");
     <h1><?= $hero_heading ?></h1>
     <p class="text-2xl"><?= $hero_subheading ?></p>
   </div>
-  <div class="flex-1">
+  <div class="w-full flex-1">
     <!-- prettier-ignore -->
     <?= do_shortcode('[contact-form-7 id="9bc228c" title="Contact form 1"]') ?>
   </div>

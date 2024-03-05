@@ -6,6 +6,7 @@
 }
 
 .wpcf7 form {
+  @apply w-full;
   @apply grid;
   @apply grid-cols-1;
   @apply gap-3;
