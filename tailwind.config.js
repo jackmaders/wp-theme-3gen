@@ -63,6 +63,14 @@ export default {
       },
     },
   },
+  safelist: [
+    {
+      // WordPress Contact Form 7
+      pattern: /col-span-./,
+      variants: ["xs", "sm", "md", "lg", "xl", "2xl"],
+    },
+    "select-wrapper",
+  ],
   plugins: [
     require("tailwindcss-full-bleed"),
     require("@tailwindcss/typography"),

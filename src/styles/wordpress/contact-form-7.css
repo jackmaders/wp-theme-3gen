@@ -6,9 +6,10 @@
 }
 
 .wpcf7 form {
-  @apply flex;
-  @apply flex-col;
+  @apply grid;
+  @apply grid-cols-1;
   @apply gap-3;
+  @apply md:grid-cols-2;
 }
 
 .wpcf7 label {
@@ -25,6 +26,7 @@
 }
 
 .wpcf7 input[type="submit"] {
+  @apply mx-auto;
   @apply button;
 }
 
@@ -34,4 +36,5 @@
 
 .wpcf7 form .wpcf7-response-output {
   @apply m-0;
+  @apply md:col-span-2;
 }

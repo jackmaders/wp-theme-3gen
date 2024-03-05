@@ -56,6 +56,11 @@
     @apply py-2;
     @apply px-4;
     @apply rounded;
+    @apply w-full;
+    @apply text-dark;
+    @apply appearance-none;
+    @apply flex;
+    @apply justify-between;
   }
 
   input::placeholder,

@@ -62,3 +62,4 @@ add_action("wp_enqueue_scripts", "threeGen_register_styles");
 add_action("wp_enqueue_scripts", "threeGen_register_scripts");
 add_action("wp_head", "threeGen_meta_viewport", 1);
 add_action("customize_register", "threeGen_customize_register");
+add_filter('wpcf7_autop_or_not', '__return_false');

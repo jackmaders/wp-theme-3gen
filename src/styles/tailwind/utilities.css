@@ -31,4 +31,25 @@
     @apply backdrop-blur;
     @apply overflow-hidden;
   }
+
+  .select-wrapper {
+    @apply flex;
+    @apply items-center;
+    @apply justify-end;
+    @apply w-full;
+  }
+
+  .select-wrapper span {
+    @apply w-full;
+  }
+
+  .select-wrapper::after {
+    @apply content-empty;
+    @apply absolute;
+    @apply block;
+    @apply size-6;
+    @apply mask-chevron-down;
+    @apply bg-dark;
+    @apply mr-4;
+  }
 }

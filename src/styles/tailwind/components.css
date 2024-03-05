@@ -9,6 +9,7 @@
     @apply items-center;
     @apply justify-center;
     @apply bg-emerald-700;
+    @apply text-light;
     @apply text-xl;
     @apply font-medium;
     @apply rounded-sm;
