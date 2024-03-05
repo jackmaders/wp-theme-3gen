@@ -9,7 +9,9 @@
     <main class="">
       <?php get_template_part("templates/navigation"); ?>
       <?php get_template_part("templates/hero"); ?>
-      <?php the_content(); ?>
+      <div class="container prose py-16">
+        <?php the_content(); ?>
+      </div>
       <?php get_template_part("templates/footer"); ?>
     </main>
 
