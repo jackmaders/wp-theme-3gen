@@ -4,7 +4,7 @@ export default async function main() {
     document.querySelectorAll<HTMLElement>(navigationSelector);
 
   if (navigationElements) {
-    const navigation = await import("./template-parts/navigation");
+    const navigation = await import("./templates/navigation");
     navigationElements.forEach(navigation.default);
   }
 }
