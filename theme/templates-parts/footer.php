@@ -1,8 +1,17 @@
 <!-- prettier-ignore -->
-<?php if (function_exists("the_custom_logo")) {
+<?php
+  if (function_exists("the_custom_logo")) {
     $custom_logo_id = get_theme_mod("custom_logo");
     $logo = wp_get_attachment_image_src($custom_logo_id, $size = "medium");
-} ?>
+  }
+
+  $footer_email = get_theme_mod("footer_email"); 
+  $footer_phone = get_theme_mod("footer_phone");
+  $footer_facebook_link = get_theme_mod("footer_facebook_link");
+  $footer_instagram_link = get_theme_mod("footer_instagram_link");
+  $footer_x_link = get_theme_mod("footer_x_link");
+  $footer_linkedin_link = get_theme_mod("footer_linkedin_link");
+?>
 
 <footer
   class="container flex flex-col items-center gap-8 pb-3 pt-16 text-light bleed-bg bleed-oxford-900"
@@ -32,41 +41,62 @@
         class="flex flex-col items-center gap-3 text-lg leading-none lg:items-end"
       >
         <div class="flex justify-center gap-3">
+          <!-- prettier-ignore -->
+          <?php if (!empty($footer_facebook_link)): ?>
           <a
-            href="/"
+            href="<?= $footer_facebook_link ?>"
             class="after:mask-[url('/src/images/svg/brand/facebook.svg')] after:mask-size-contain after:mask-position-center after:mask-no-repeat after:block after:size-6 after:bg-light after:content-empty"
           >
             <span class="sr-only">facebook</span>
           </a>
+          <?php endif; ?>
+
+          <!-- prettier-ignore -->
+          <?php if (!empty($footer_instagram_link)): ?>
           <a
-            href="/"
+            href="<?= $footer_instagram_link ?>"
             class="after:mask-[url('/src/images/svg/brand/instagram.svg')] after:mask-size-contain after:mask-position-center after:mask-no-repeat after:block after:size-6 after:bg-light after:content-empty"
           >
             <span class="sr-only">instagram</span>
           </a>
+          <?php endif; ?>
+          <!-- prettier-ignore -->
+          <?php if (!empty($footer_x_link)): ?>
           <a
-            href="/"
+            href="<?= $footer_x_link ?>"
             class="after:mask-[url('/src/images/svg/brand/x.svg')] after:mask-size-contain after:mask-position-center after:mask-no-repeat after:block after:size-6 after:bg-light after:content-empty"
           >
             <span class="sr-only">X</span>
           </a>
+          <?php endif; ?>
+          <!-- prettier-ignore -->
+          <?php if (!empty($footer_linkedin_link)): ?>
           <a
-            href="/"
+            href="<?= $footer_linkedin_link ?>"
             class="after:mask-[url('/src/images/svg/brand/linkedin.svg')] after:mask-size-contain after:mask-position-center after:mask-no-repeat after:block after:size-6 after:bg-light after:content-empty"
           >
             <span class="sr-only">linkedin</span>
           </a>
+          <?php endif; ?>
         </div>
+        <!-- prettier-ignore -->
+        <?php if (!empty($footer_email)): ?>
         <a
           class="before:mask-[url('/src/images/svg/envelope.svg')] before:mask-size-contain before:mask-position-center before:mask-no-repeat flex items-center gap-2 before:block before:size-5 before:bg-emerald-700 before:content-empty"
-          href="mailto:a@b.com"
-          >sales@3genrenewables.co.uk</a
+          href="mailto:<?= $footer_email ?>"
         >
+          <?= $footer_email ?>
+        </a>
+        <?php endif; ?>
+        <!-- prettier-ignore -->
+        <?php if (!empty($footer_phone)): ?>
         <a
           class="before:mask-[url('/src/images/svg/phone.svg')] before:mask-size-contain before:mask-position-center before:mask-no-repeat flex items-center gap-2 before:block before:size-5 before:bg-emerald-700 before:content-empty"
-          href="tel:12345678910"
-          >12345678910</a
+          href="tel:<?= $footer_phone ?>"
         >
+          <?= $footer_phone ?>
+        </a>
+        <?php endif; ?>
       </div>
 
       <a class="button" href="/">Get a Quote</a>
